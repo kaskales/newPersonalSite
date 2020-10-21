@@ -1,0 +1,111 @@
+
+body {
+	background-color: #000000;
+    background-image: url(images/pittsburghg.jpg);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: background-color 0.2s ease-in-out;
+
+}
+html {
+    height: auto;
+    min-height: 100%;
+    background-size:cover;
+}
+
+#div_img {
+    /*height: 100vh;
+    min-height: 100%;*/
+    max-width: 100%;
+    min-height: 100%;
+    background-size:cover;
+}
+body img {
+/*  position:absolute;
+  left:0;
+  min-height: 100vh;
+  background-size:     cover;    */                 
+/*    background-repeat:   no-repeat;
+    background-position: center center;*/
+  /*height: 100vh;
+  width: auto;
+    
+    background-size: cover;
+    background-position: center center;*/
+}
+
+ #img_default {
+   transition: all 0.9s ease ;
+   height: auto;
+    min-height: 100%;
+    background-size: cover;
+ }
+
+#name {
+	font-family: 'Dancing Script', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+#year {
+	font-family: 'Dancing Script', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slidecontainer {
+  padding-top: 25px;
+  width: 100%; /* Width of the outside container */
+
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 55px; /* Specified height */
+  background: transparent;/*background: #d3d3d3;  Grey background */
+  background-image: url(cloud3.png); /* Green background */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: repeat;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+
+
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  /*background: #b0ecfc;*/
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px; /* Slider handle height */
+  border: 0;
+  background: transparent;
+  background-image: url(images/airplane2.png); /* Green background */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px; /* Slider handle height */
+  border: 0;
+  background: transparent;
+  background-image: url(images/airplane2.png);  /* Green background */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer; /* Cursor on hover */
+}
